@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header>
+      <nav id="navbar">
+        <h3 class="logo">MyPortfolio</h3>
+        <ul class="allLists ">
+          <li class="list"><a class="anch" href="#Home">Home</a></li>
+          <li class="list"><a class="anch"href="#About">About</a></li>
+          <li class="list"><a class="anch"href="#skillsSection">Skills</a></li>
+          <li class="list"><a class="anch"href="#Worksection">Work</a></li>
+          <li class="list"><a class="anch"href="#contactSection">Contact</a></li>
+        </ul>
+               <a class="listbar" href="#">&#8801;</a>
+      </nav>
+    </header>
+
+    <!-- home page section -->
+    <section class="home" id="Home">
+         <div class="righthome">
+        <img
+        src=https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWxzfGVufDB8fDB8fHww&w=1000&q=80"
+        alt="" />
+      </div>
+      <div class="lefthome">
+        <h1>
+          Hi There,<br />
+          I'm <span>Mahesh Naik...</span>
+        </h1>
+        <h5>I Am Into Full-Stack Web Development!</h5>
+        <div class="btn">
+          <a href="#About"
+            >About Me
+            <i class="fa-solid fa-circle-arrow-down"></i>
+          </a>
+        </div>
+        <div class="icons">
+          <i class="icon fa-brands fa-linkedin linkedIn"></i>
+          <i class="icon fa-brands fa-square-github github"></i>
+        </div>
+      </div>
+
+   
+    </section>
+
+    <!-- About page section -->
+    <section id="About">
+      demo
+      <div class="aboutpage">
+        <h1>
+          <i class="fa-solid fa-user"></i>About <span class="blueSpan">Me</span>
+        </h1>
+
+        <div class="aboutcontainer">
+          <div class="leftabout">
+            <img
+            src=https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWxzfGVufDB8fDB8fHww&w=1000&q=80"
+            alt="" />
+          </div>
+
+          <div class="rightabout">
+            <h2>Mahesh Naik</h2>
+            <h5>Full Stack Developmer</h5>
+            <p id="aboutp">
+              I am a Full-Stack developer from Bhatkal, Karnataka. I have
+              studied Bacholore of Science from Anjuman Science Commerce and
+              Arts college Bhatkal. I am very passionate about improving my
+              coding skills & developing applications & websites. I build
+              WebApps and Websites using MERN Stack.I'm working for myself to
+              improve my skills. Love to build Full-Stack clones.
+            </p>
+            <div class="creds">
+              <label>Phone : </label>
+              <p class="credential">+91 9113574468</p>
+            </div>
+            <div class="creds">
+              <label>Email : </label>
+              <p class="credential">mn127184@gmail.com</p>
+            </div>
+            <div class="creds">
+              <label>Education : </label>
+              <p class="credential">
+                <strong>B.Sc :- </strong>Anjuman Science Commerce Arts college
+                Bhatkal
+              </p>
+            </div>
+            <div>
+              <label>Place : </label>
+              <p class="credential">Bhatkal, Karnataka, India - 581320</p>
+            </div>
+            <button id="resumebtn">
+              <a href="#About"
+                >Resume<i class="fa-solid fa-circle-chevron-right"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills page section -->
+    <section id="skillsSection">
+      demo
+      <div id="Skills">
+        <h1>
+          <i class="fa-solid fa-laptop-code"></i>Skills &
+          <span class="yellowSpan">Abilities</span>
+        </h1>
+        <div class="skillcontainer">
+          <!-- <div class="allSkills">
+            <img
+              class="skillicons"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+              alt=""
+            />
+            <p>Tailwind</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Works and projects section  -->
+    <section id="Worksection">
+      demo
+      <div class="work">
+        <h1>
+          <i class="fa-solid fa-laptop-code"></i>Projects
+          <span class="blueSpan">Made</span>
+        </h1>
+        <div class="allProjects">
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact page section  -->
+    <section id="contactSection">
+      <div class="contactCard">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <input
+            placeholder="Name"
+            type="text"
+            id="name"
+            name=" name"
+            required
+          />
+
+          <input
+            placeholder="Email"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <input
+            placeholder="Phone"
+            type="number"
+            id="phone"
+            name="number"
+            required
+          />
+
+          <label for="message">Tell me something?:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button class="submitBtn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section>
+      <footer>
+        <div class="footContent">
+          <div class="leftfoot">
+            <h2>My Portfolio website</h2>
+            <p>
+              Thank you for visiting my personal portfolio <br />
+              website. Connect with me over socials.
+            </p>
+          </div>
+
+          <div class="middlefoot">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#skillsSection">Skills</a></li>
+              <li><a href="#Worksection">Work</a></li>
+            </ul>
+          </div>
+
+          <div class="rightfoot">
+            <h2>Contact Info</h2>
+            <p><i class="fa-solid fa-phone footicon"></i>+91 9113574468</p>
+            <p>
+              <i class="fa-solid fa-envelope footicon"></i>mn127184@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot footicon"></i>Bhatkal,
+              India-581320
+            </p>
+            <div class="icons">
+              <i class="iconF fa-brands fa-linkedin linkedIn"></i>
+              <i class="iconF fa-brands fa-square-github github"></i
+              ></i><i class="iconF twitter fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <div class="downfoot">
+          <hr />
+          <p>
+            Designed with <i class="heart fa-solid fa-heart"></i> By
+            <span class="yellowSpan">Mahesh Naik</span>
+          </p>
+        </div>
+      </footer>
+    </section>
+    <!-- script for using icons from font icons -->
+    <script
+      src="https://kit.fontawesome.com/9d3ce5437d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scrypt.js"></script>
+  </body>
+</html>
