@@ -3,35 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My - Portfolio</title>
+    <meta
+      name="keywords"
+      content="mahesh naik, portfolio, mahesh, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio"
+    />
+    <meta
+      name="description"
+      content="Welcome to Mahesh's Portfolio. Full-Stack Web Developer"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/x-png"
+    />
+    <title>Portfolio | Mahesh Naik</title>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <!-- navbar section -->
     <header>
       <nav id="navbar">
-        <h3 class="logo">MyPortfolio</h3>
-        <ul class="allLists ">
+        <a href="/" class="logo">MyPortfolio</a>
+        <!-- <h3 class="logo">MyPortfolio</h3> -->
+        <ul class="allLists">
           <li class="list"><a class="anch" href="#Home">Home</a></li>
-          <li class="list"><a class="anch"href="#About">About</a></li>
-          <li class="list"><a class="anch"href="#skillsSection">Skills</a></li>
-          <li class="list"><a class="anch"href="#Worksection">Work</a></li>
-          <li class="list"><a class="anch"href="#contactSection">Contact</a></li>
+          <li class="list"><a class="anch" href="#About">About</a></li>
+          <li class="list"><a class="anch" href="#skillsSection">Skills</a></li>
+          <li class="list"><a class="anch" href="#Worksection">Work</a></li>
+          <li class="list">
+            <a class="anch" href="#contactSection">Contact</a>
+          </li>
         </ul>
-               <a class="listbar" href="#">&#8801;</a>
+        <a class="listbar" href="#">&#8801;</a>
       </nav>
     </header>
 
     <!-- home page section -->
     <section class="home" id="Home">
-         <div class="righthome">
-        <img
-        src=https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWxzfGVufDB8fDB8fHww&w=1000&q=80"
-        alt="" />
+      <div class="righthome">
+        <img src="./images/favicon.png" alt="" />
       </div>
       <div class="lefthome">
         <h1>
@@ -50,8 +65,6 @@
           <i class="icon fa-brands fa-square-github github"></i>
         </div>
       </div>
-
-   
     </section>
 
     <!-- About page section -->
@@ -64,9 +77,7 @@
 
         <div class="aboutcontainer">
           <div class="leftabout">
-            <img
-            src=https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWxzfGVufDB8fDB8fHww&w=1000&q=80"
-            alt="" />
+            <img src="images/Passport_Photograph 2.jpg" alt="" />
           </div>
 
           <div class="rightabout">
@@ -100,7 +111,9 @@
               <p class="credential">Bhatkal, Karnataka, India - 581320</p>
             </div>
             <button id="resumebtn">
-              <a href="#About"
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1QLFRzneFTYggNyv05FuYVRu5Ve14a-cc/view"
                 >Resume<i class="fa-solid fa-circle-chevron-right"></i
               ></a>
             </button>
@@ -110,6 +123,7 @@
     </section>
 
     <!-- Skills page section -->
+
     <section id="skillsSection">
       demo
       <div id="Skills">
@@ -139,10 +153,34 @@
           <span class="blueSpan">Made</span>
         </h1>
         <div class="allProjects">
-          <div class="projects"></div>
-          <div class="projects"></div>
-          <div class="projects"></div>
-          <div class="projects"></div>
+          <!-- <div class="box">
+            <img
+              draggable="false"
+              src="./images/schoolapp.jpg"
+              alt=""
+            />
+            <div class="content">
+              <div class="tag">
+                <h3>School Administration App</h3>
+              </div>
+              <div class="desc">
+                <p>
+                 A Full Stack MERN Application to Handle a School Management.
+                </p>
+                <div class="btns">
+                  <a href="#" class="btn" target="_blank"
+                    ><i class="fas fa-eye"></i> View</a
+                  >
+                  <a
+                    href="#"
+                    class="btn"
+                    target="_blank"
+                    >Code <i class="fas fa-code"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -151,35 +189,43 @@
     <section id="contactSection">
       <div class="contactCard">
         <h2>Contact Me</h2>
-        <form action="#" method="post">
-          <input
-            placeholder="Name"
-            type="text"
-            id="name"
-            name=" name"
-            required
-          />
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <input
+              placeholder="Name"
+              type="text"
+              id="name"
+              name=" name"
+              required
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </p>
+          <p>
+            <input
+              placeholder="Phone"
+              type="number"
+              id="phone"
+              name="number"
+              required
+            />
+          </p>
 
-          <input
-            placeholder="Email"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
+          <p>
+            <label for="message">Tell me something?:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </p>
 
-          <input
-            placeholder="Phone"
-            type="number"
-            id="phone"
-            name="number"
-            required
-          />
-
-          <label for="message">Tell me something?:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button class="submitBtn" type="submit">Submit</button>
+          <p>
+            <button class="submitBtn" type="submit">Submit</button>
+          </p>
         </form>
       </div>
     </section>
@@ -220,7 +266,7 @@
             <div class="icons">
               <i class="iconF fa-brands fa-linkedin linkedIn"></i>
               <i class="iconF fa-brands fa-square-github github"></i
-              ></i><i class="iconF twitter fa-brands fa-x-twitter"></i>
+              ><i class="iconF twitter fa-brands fa-x-twitter"></i>
             </div>
           </div>
         </div>
