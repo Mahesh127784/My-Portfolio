@@ -223,6 +223,15 @@ const allProjects = [
     },
   },
   {
+    name: "Spotify Clone [JS]",
+    desc: "A Frontend Spotify Clone Which Plays Some Songs",
+    image: "spotify",
+    links: {
+      view: "https://my-spotify-demo.vercel.app/",
+      code: "https://github.com/Mahesh127784/spotify-clone-FE",
+    },
+  },
+  {
     name: "Number-Bubble Game [JS]",
     desc: "A Number Game Made up of HTML CSS and JAVASCRIPT Which make Users Brain",
     image: "bubblegame",
