@@ -245,7 +245,7 @@ for (let i = 0; i < icons.length; i++) {
       window.open("https://github.com/Mahesh127784", "_blank");
     if (icon.contains("linkedIn"))
       window.open(
-        "https://www.linkedin.com/in/mahesh-naik-7035a22a0",
+        "https://www.linkedin.com/in/mahesh-naik-7035a22a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
         "_blank"
       );
     if (icon.contains("twitter"))
